@@ -1,0 +1,94 @@
+    "dwarven"
+    {
+        {
+          ids = { "TDWARF_WORKER" }
+          traits = { WORKER NO_LIMIT NO_EQUIPMENT }
+          keybinding = CREATE_IMP
+          noAuto = true
+          initialRecruitment = 4
+          requirements = {
+            { 1 ExponentialCost "GOLD" 30 5 4 }
+          }
+        }
+        {
+        }
+        {
+		  }
+        }
+        {
+          ids = { "TDWARF_MONK" }
+          frequency = 0.45
+          traits = { FIGHTER NO_EQUIPMENT }
+          requirements = {
+		  { 0.0 TechId "dwarven monks"} 
+		  { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
+		  { 0.1 AttractionInfo 1 {FurnitureType "BOOKCASE_WOOD"}}
+		  }
+          specialTraits = {
+            { 0.3 { Lasting { TELEPATHY } }}
+            { 0.2 { Lasting { DISARM_TRAPS_SKILL } }}
+            { 0.1 { AttrBonus SPELL_DAMAGE 5 }}
+			{ 0.1 { AttrBonus DAMAGE 5 }}
+            { 0.2 { AttrBonus DEFENSE 5 }}
+			{ 0.08 { AttrBonus DEFENSE 15 AttrBonus DAMAGE 15 Lasting { INSANITY } }}
+            { 0.3 { Lasting { NIGHT_VISION } }}
+		  }
+        }
+		{
+          ids = { "TELITE_DWARF_WARRIOR" }
+          frequency = 0.5
+          traits = { FIGHTER }
+          requirements = {{ 0.0 TechId "elite nobility"}}
+          specialTraits = {
+            { 0.5 { WorkshopType "FORGE" }}
+            { 0.5 { WorkshopType "WORKSHOP" }}
+            { 0.3 { WorkshopType "JEWELER" }}
+            { 0.2 { Lasting { DISARM_TRAPS_SKILL } }}
+            { 0.3 { WorkshopType "LABORATORY" }}
+            { 0.2 { Lasting { REGENERATION } }}
+            { 0.2 { Lasting { TELEPATHY } }}
+            { 0.2 { Lasting { SLEEP_RESISTANT } }}
+            { 0.2 { Lasting { NIGHT_VISION } }}
+		  }
+        }
+		{
+          ids = { "TDWARF_FEMALE2" "TDWARF_FEMALE3" }
+          traits = { NO_LIMIT INCREASE_POPULATION NO_EQUIPMENT }
+          requirements = {
+            { 1.0 CostInfo "GOLD" 50 }
+		  }
+          specialTraits = {
+            { 0.25 { Lasting { COPULATION_SKILL } }}
+          }
+        }
+    	{
+          ids = { "DWARF_BARON" }
+          traits = { FIGHTER }
+          consumeIds = true
+          stripEquipment = false 
+          requirements = {
+            { 1.0 FurnitureType "THRONE" }
+            { 1.0 CostInfo "GOLD" 500 }
+            { 0.0 TechId "marriage of convenience" }
+          }
+        }
+        {
+          ids = { "TELITE_DWARF_WARRIOR" "TDWARF_WARRIOR" "TDWARF_FIGHTER2" "TDWARF_MILITIA" }
+          traits = { FIGHTER WORKER }
+          spawnLocation = Pregnancy
+          requirements = {
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+            { 0.1 { WorkshopType "FORGE" }}
+            { 0.1 { WorkshopType "WORKSHOP" }}
+            { 0.1 { WorkshopType "JEWELER" }}
+            { 0.1 { Lasting { DISARM_TRAPS_SKILL } }}
+            { 0.1 { WorkshopType "LABORATORY" }}
+            { 0.05 { Lasting { REGENERATION } }}
+            { 0.1 { Lasting { TELEPATHY } }}
+            { 0.1 { Lasting { SLEEP_RESISTANT } }}
+            { 0.1 { Lasting { NIGHT_VISION } }}
+          }
+        }
+    }

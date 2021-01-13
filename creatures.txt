@@ -1,0 +1,101 @@
+# Redesign/Rebuild of just Dwarves from Bonus Dev Pack
+# I am actually going through and rewriting everything,
+# because I can't find a bug.
+# I know that it is not with the whole thing, as I tested with a new file.
+
+"TALDWARF_QUEEN"
+	{
+	viewId = { "tal_dwarf_queen" }
+	attr = {
+	     DAMAGE 30
+	     DEFENSE 24
+	     }
+	body = {
+	     type = Humanoid MEDIUM
+	     weight 90
+	     }
+	name = {
+	     name = "dwarf queen"
+	     pluralName = "dwarves"
+	     firstNameGen = "DWARF"
+	     }
+	skills = {
+	       "WORKSHOP" 1.0
+	       "FORGE" 1.0
+	       "DIGGING" 0.6
+	       }
+	maxLevelIncrease = { MELEE 7 }
+	permanentEffects = { MAGIC VULNERBILITY 1 }
+	spells = { "healing" }
+	chatReactionFriendly = "complains about the dwarven nobility"
+	chatReactionHostile = "\"Die!\""
+	gender = FEMALE
+	hatedByEffect = HATE_DWARVES
+	{
+"TALDWARF_MILITIA"
+	{
+	 viewId= { "tal_dwarf_militia" }
+	 attr = {
+	      DAMAGE 15
+	      DEFENSE 20
+	 }
+	 body = {
+	      type = Humanoid MEDIUM
+	      weight = 90
+	 }
+	 name = {
+	      name = "dwarf militia"
+	      pluralName = "dwarves"
+	      firstNameGen = "DWARF"
+	 }
+	 skills = {
+	 	"FORGE" 0.8
+		"DIGGING" 1.0
+	 }
+	 maxLevelIncrease = { MELEE 3 }
+	 permanentEffects = { MAGIC_VULNERABILITY 1 }
+	 chatReactionFriendly = "curses all orcs"
+	 chatReactionHostile = "\"Die!\""
+	 hatedByEffect = HATE_DWARVES
+	}
+"TALDWARF_FIGHTER" inherit "TALDWARF_MILITIA"
+	{
+	 viewId = { "tal_dwarf_fighter" }
+	 attr = {
+	      DAMAGE 23
+	      DEFENSE 23
+	 }
+	 name = {
+	      name = "dwarf fighter"
+	      pluralName = "dwarves"
+	      firstNameGen = "DWARF"
+	 }
+	 maxLevelIncrease = { MELEE 5 }
+
+"TALDWARF_WARRIOR" inherit "TALDWARF_MILITIA"
+	{
+	 viewId = { "tal_dwarf_warrior" }
+	 attr = {
+	      DAMAGE 25
+	      DEFENSE 25
+	 }
+	 name = {
+	      name = "dwarf warrior"
+	      pluralName = "dwarves"
+	      firstNameGen = "DWARF"
+	 }
+	 maxLevelIncrease = { MELEE 6 }
+"TALDWARF_WARRIOR_ELITE" inherit "TALDWARF_MILITIA"
+	{
+	 viewId = { "tal_dwarf_warrior_elite" }
+	 attr = {
+	      DAMAGE 27
+	      DEFENSE 27
+	 }
+	 name = {
+	      name = "dwarf elite warrior"
+	      pluralName = "dwarves"
+	      firstNameGen = "DWARF"
+	 }
+	 maxLevelIncrease = { MELEE 5 }
+

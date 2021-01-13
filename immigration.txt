@@ -1,0 +1,43 @@
+"taldwarf"
+{
+	{
+	ids = { "TALDWARF_MILITIA" }
+	traits = { FIGHTER WORKER }
+	requirements = { }
+	specialTraits {
+		      { 0.1 { WorkshopType "LABORATORY" }}
+		      { 0.1 { WorkshopType "JEWELER" }}
+		      { 0.1 { WorkshopType "FORGE" }}
+		      }
+	}
+	{
+	ids = { "TALDWARF_FIGHTER" }
+	traits = { FIGHTER }
+	requirements = { }
+	specialTraits {
+		      { 0.2 { WorkshopType "LABORATORY" }}
+		      { 0.2 { WorkshopType "JEWELER" }}
+		      { 0.2 { WorkshopType "FORGE" }}
+		      }
+	}
+	{
+	ids = { "TALDWARF_WARRIOR" }
+	traits = { FIGHTER }
+	requirements = { }
+	specialTraits {
+		      { 0.3 { WorkshopType "LABORATORY" }}
+		      { 0.3 { WorkshopType "JEWELER" }}
+		      { 0.3 { WorkshopType "FORGE" }}
+		      }
+	}
+	{
+	ids = { "TALDWARF_WARRIOR_ELITE" }
+	traits = { FIGHTER }
+	requirements = { }
+	specialTraits {
+		      { 0.5 { WorkshopType "LABORATORY" }}
+		      { 0.5 { WorkshopType "JEWELER" }}
+		      { 0.5 { WorkshopType "FORGE" }}
+		      }
+	}
+}

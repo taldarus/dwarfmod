@@ -1,0 +1,5 @@
+{ "tal_dwarf_militia" "h" ColorId BLUE }
+{ "tal_dwarf_fighter" "h" ColorId BLUE }
+{ "tal_dwarf_warrior" "h" ColorId BLUE }
+{ "tal_dwarf_warrior_elite" "h" ColorId BLUE }
+{ "tal_dwarf_queen" "Q" ColorId WHITE }

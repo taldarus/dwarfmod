@@ -1,0 +1,11 @@
+  "dwarf monk" SPELL
+  {
+   "advanced healing" 1
+   "fire breath" 2
+   #"stone to mud" 3
+   "advanced cure poison" 4
+   "pull" 5
+   #"area damage bonus" 6
+   #"area defense bonus" 6
+   "double trouble" 7
+  }

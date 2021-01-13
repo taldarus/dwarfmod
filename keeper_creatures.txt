@@ -1,0 +1,23 @@
+"taldwarf_queen"
+{
+	creatureId = { "TALDWARF_QUEEN" }
+	tribeAlignment = LAWFUL
+	immigrantGroups = { "taldwarf" }
+	technology = {
+        	   "alchemy" "advanced alchemy" "alchemical conversion"
+		   "pig breeding" "iron working"
+        	   "jewellery" "two-handed weapons" "traps" "redemption"
+		   "basic nobility" "dwarven monks"
+		   "advanced nobility" "elite nobility"  "master jewellery"
+		   "dwarven alchemy" "marriage of convenience"
+    		   }
+	initialTech = { "traps" }
+	buildingGroups = {
+        	       "structure" "doors" "floors" "storage"
+		       "zones" "throne" "beds" "crafting" "laboratory"
+		       "jeweller" "poetry" "pigsty" "dwarven"
+        	       "dwarven training" "orders" "installations" "magical_installations" "traps"
+    	}
+	workshopGroups = { "dwarven" }
+	description = "Rule your fierce dwarven empire with a velvet glove, holding an iron scepter."
+}

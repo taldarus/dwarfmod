@@ -1,0 +1,5 @@
+
+  { "tl_df_monk" "h" ColorId BLUE}
+  { "tl_df_worker" "h" ColorId BLUE }
+  { "tl_df_fem1" "h" ColorId LIGHT_BLUE }
+  { "tl_df_fem2" "h" ColorId LIGHT_BLUE }

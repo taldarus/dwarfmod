@@ -1,0 +1,25 @@
+  "dwarven"
+  {
+    { Furniture {{ "PRISON" }        "IRON" 15 }                   "Prison"            "Prison"
+        "Required to capture enemies." p {} true}
+
+    { Furniture {{ "TORTURE_TABLE" } "IRON" 15 }                   "Torture table"     "Prison"
+        "Can be used to torture prisoners. Free population slot required for torturing."  0 { TechId "redemption" }}
+  }  
+
+
+  "dwarven training"
+  {
+    { Furniture {{ "TRAINING_WOOD" } "WOOD" 12 }                   "Wooden dummy"      "Training room"
+        "Train your minions' melee skills here." r {} true  TRAINING_ROOM}
+
+    { Furniture {{ "TRAINING_IRON" } "IRON" 12 }                   "Iron dummy"        "Training room"
+        "Train your minions' melee skills here."   0 { TechId "iron working" } }
+
+    { Furniture {{ "TRAINING_ADA" }  "ADA"  12 }                   "Adamantine dummy"  "Training room"
+        "Train your minions' melee skills here."   0 { TechId "iron working" }}
+
+	{ Furniture {{ "BOOKCASE_IRON" }   "IRON" 10 }                 "Iron bookcase"     "Training room"
+        "Required to recruit and train dwarf monks in spellcraft." 0 {TechId "dwarven monks"} }
+  }
+
